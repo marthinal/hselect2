@@ -53,6 +53,17 @@ class hselect2TaxonomyWidget extends WidgetBase {
     return $element;
   }
 
+  /**
+   * Attach js, css and settings.
+   *
+   * @param array $element
+   *  Form element array containing basic properties for the widget
+   * @param \Drupal\Core\Form\FormStateInterface $form_state
+   *  The current state of the form.
+   *
+   * @return array
+   *  The element with libraries and settings attached.
+   */
   public static function afterBuild(array $element, FormStateInterface $form_state) {
     // Attaching hselect2.js
     $element['#attached']['library'][] = 'hselect2/hselect2.config';
