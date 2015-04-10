@@ -1,0 +1,10 @@
+name: HSelect2 Taxonomy
+type: module
+description: 'Hierarchical Select widget for taxonomy.'
+package: Field types
+version: VERSION
+core: 8.x
+dependencies:
+  - hselect2
+  - taxonomy
+

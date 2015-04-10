@@ -1,0 +1,9 @@
+name: HSelect2
+type: module
+description: 'Hierarchical Select using Select2 jQuery Plugin.'
+package: Field types
+version: VERSION
+core: 8.x
+dependencies:
+  - field
+

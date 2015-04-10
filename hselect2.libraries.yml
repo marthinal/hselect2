@@ -1,0 +1,8 @@
+hselect2.config:
+  version: VERSION
+  js:
+    js/hselect2.js: {}
+    js/select2/dist/js/select2.js: {}
+  css:
+    component:
+      js/select2/dist/css/select2.css: {}

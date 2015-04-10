@@ -1,0 +1,8 @@
+hsd8.hierarchical_select_ajax:
+  path: '/hs2_taxonomy'
+  defaults:
+    _controller: '\Drupal\hselect2_taxonomy\Controller\HSelect2TaxonomyController::request'
+  requirements:
+    _permission: 'access content'
+    _access: 'TRUE'
+    _format: 'json'
