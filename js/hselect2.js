@@ -161,7 +161,7 @@
       $(this).select2('destroy');
       $(this).remove();
     });
-    //$triggering_element.nextAll('.chzn-container').remove();
+
     $triggering_element.nextAll('.shs-term-add-new-wrapper').remove();
     // Create next level (if the value is != 0).
     if ($triggering_element.val() != 0) {
@@ -170,9 +170,10 @@
       // Retrieve list of items for the new element.
       getChildren($element_new, settings, $triggering_element.val(), 0, base_id)
         .then(function(data){
-          if (data !== 'null') {
-            // From json to Object (required format by Select2).
-            data = jQuery.parseJSON(data);
+          // From json to Object (required format by Select2).
+          data = jQuery.parseJSON(data);
+          // Verifies that we have terms to build the next level.
+          if (!jQuery.isEmptyObject(data)) {
             // We need an empty value as first value otherwise Select2 placeholder
             // does not work.
             data.unshift({id: '', text: '- None -'});
