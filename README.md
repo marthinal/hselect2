@@ -1,4 +1,7 @@
 # hselect2
+
+This is a WIP. Actually I have no time to continue working on this project. Please let me know if you want to contribute. :)
+
 Hierarchical Select for Drupal 8 using Select2.
 
 This module is based on shs and hierarchical_select.
